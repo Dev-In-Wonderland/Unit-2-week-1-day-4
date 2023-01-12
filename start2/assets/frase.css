@@ -8,3 +8,105 @@
 7 ritardare progressivamente l'animazione delle altre 2 parole 
 */
 
+
+body{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 2em;
+
+}
+
+
+#testoAlternato {
+    border: 5px solid #444;
+    padding: 1em;
+    color: #444;
+    font-weight: 500;
+    float: left;
+}
+
+.parole {
+    color: rgb(135, 129, 129);
+    display: inline-block;
+    
+
+}
+#a{
+    transform: translate(50px, 50px)
+}
+/* 
+.parole {
+    
+    animation: pacman 10s ease infinite;
+  } */
+/* 
+  #first{
+    transform: translate(50px, 50px) */
+
+  #first{
+    animation: pacman 10s ease infinite;
+    transition: transform 3s;
+    
+  }
+  #second{
+    animation: pacman1 10s ease infinite;
+    transition: transform
+  }
+  #third{
+    animation: pacman2 10s ease infinite;
+    animation-delay: 10s;
+  }
+
+  @keyframes pacman {
+    0% {
+        transform: translate(0px, -610px);
+    }
+
+    40% {
+      transform: translate(0px, 0px);
+    }
+
+    60% {
+      transform: translate(0px, 0px);
+    }
+
+    100% {
+      transform: translate(0px, 610px);
+      color: rgba(135, 129, 129, 0.368);;
+    }
+  }
+  @keyframes pacman1 {
+    0% {
+        transform: translate(0px, -1610px);
+    }
+
+    40% {
+      transform: translate(0px, 0px);
+    }
+
+    60% {
+      transform: translate(0px, 0px);
+    }
+
+    100% {
+      transform: translate(0px, 1610px);
+      color: rgba(135, 129, 129, 0.368);;
+    }
+  }
+  @keyframes pacman2 {
+    0% {
+        transform: translate(0px, -2610px);
+    }
+
+    40% {
+      transform: translate(0px, 0px);
+    }
+
+    60% {
+      transform: translate(0px, 0px);
+    }
+
+    100% {
+      transform: translate(0px, 2610px);
+      color: rgba(135, 129, 129, 0.368);;
+    }
+  }
